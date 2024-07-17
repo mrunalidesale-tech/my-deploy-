@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do List</title>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 20px;
+		background-color: #CCCCFF; /* light gray background */
+	}
+	
+	#task-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#task-list li {
+		margin-bottom: 10px;
+		padding: 10px;
+		border-bottom: 1px solid #ccc; /* gray border */
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+		background-color: tomato; /* white background */
+	}
+	
+	#task-list li:last-child {
+		border-bottom: none;
+	}
+	
+	#add-task-form {
+		margin-top: 20px;
+		padding: 20px;
+		background-color: #fff; /* white background */
+		border: 1px solid #CCCCFF; /* gray border */
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+	}
+	
+	#task-name {
+		width: 75%;
+		padding: 10px;
+		border: 1px solid #ccc; /* gray border */
+		background-color: #f0f0f0; /* light gray background */
+	}
+	
+	#add-task-btn {
+		width: 23%;
+		padding: 10px;
+		background-color: #CCCCFF; /* green background */
+		color: #E6E6FA; /* white text */
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	#task-table {
+		border-collapse: collapse;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	#task-table th, #task-table td {
+		border: 1px solid #ddd; /* gray border */
+		padding: 10px;
+		text-align: left;
+		background-color: #E6E6FA; /* light gray background */
+	}
+	
+	#task-table th {
+		background-color: #E6E6FA; /* light gray background */
+	}
+	
+	#task-table td.completed {
+		text-decoration: line-through;
+		color: #666; /* gray text */
+		background-color: #E6E6FA; /* gray background */
+	}
+	
+	#completed-task-table {
+		margin-top: 20px;
+	}
+	
+	#completed-task-table th, #completed-task-table td {
+		border: 1px solid #ddd; /* gray border */
+		padding: 10px;
+		text-align: left;
+		background-color: #f0f0f0; /* light gray background */
+	}
+	
+	#completed-task-table th {
+		background-color: #f0f0f0; /* light gray background */
+	}
+	
+	#completed-task-table td {
+		color: #666; /* gray text */
+		background-color: #ccc; /* gray background */
+	}
+</style>
+
+</head>
+<body>
+	<h1>To-Do List</h1>
+	<form id="add-task-form">
+		<input type="text" id="task-name" placeholder="Task name">
+		<button id="add-task-btn">Add Task</button>
+	</form>
+	<ul id="task-list"></ul>
+	<table id="task-table">
+		<thead>
+			<tr>
+				<th>Task Name</th>
+				<th>Due Date</th>
+				<th>Priority</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody id="task-table-body">
+			<!-- tasks will be listed here -->
+		</tbody>
+	</table>
+	<table id="completed-task-table">
+		<thead>
+			<tr>
+				<th>Task Name</th>
+				<th>Due Date</th>
+				<th>Priority</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody id="completed-task-table-body">
+			<!-- completed tasks will be listed here -->
+		</tbody>
+	</table>
+	<script>
+		// ... (rest of the JavaScript code remains the same)
+	</script>
+</body>
+</html>
+
+
+
